@@ -1,5 +1,6 @@
 import {View, StyleSheet } from 'react-native';
-import { Image } from 'expo-image';
+
+import ImageViewer from '@/components/ImageViewer';
 
 const PlaceholderImage = require('@/assets/images/background-image.png');
 
@@ -7,8 +8,8 @@ const PlaceholderImage = require('@/assets/images/background-image.png');
 const Index = () => (
     <View style={styles.container}>
       <View style={styles.imageContainer}>
-        <Image source={PlaceholderImage} style={styles.image} />
-      </View>  
+         <ImageViewer imgSource={PlaceholderImage} />
+        </View>  
     </View>
   );
 
